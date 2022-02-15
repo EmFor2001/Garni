@@ -1,6 +1,8 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
 
+// import img1 from '../assets/images/pic01'
+
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,11 +11,10 @@ import overLayPic from '../assets/images/overlay.png';
 // import { Link } from 'gatsby';
 
 const sections = [
-  { id: 'one', bg: require(`../../1.jpg`) },
-  { id: 'two', bg: require(`../../2.jpg`) },
-  { id: 'three', bg: require(`../../3.jpg`) },
-  { id: 'four', bg: require(`../../4.jpg`) },
-  { id: 'five', bg: require(`../../5.jpg`) },
+  { id: 'one', bg: require("../../1.jpg") },
+  { id: 'two', bg: require("../../static/2.jpg") },
+  { id: 'three', bg: require("../static/3.jpg") },
+  { id: 'four', bg: require("/static/4.jpg") },
 ];
 const IndexPage = () => (
   <Layout>
@@ -22,7 +23,7 @@ const IndexPage = () => (
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[0].bg} alt="" />
+          <img src={sections[0].bg} alt="img" />
         </span>
         <div className="content">
           <header className="major">
@@ -62,7 +63,7 @@ const IndexPage = () => (
     <section id="two" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[1].bg} alt="" />
+          <img src={sections[1].bg} alt="img" />
         </span>
         <div className="content">
           <header className="major">
@@ -84,7 +85,7 @@ const IndexPage = () => (
     <section id="three" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[2].bg} alt="" />
+          <img src={sections[2].bg} alt="img" />
         </span>
         <div className="content">
           <header className="major">
@@ -109,7 +110,7 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
       <span className="image fit primary">
-          <img src={sections[3].bg} alt="" />
+          <img src={sections[3].bg} alt="img" />
         </span>
         <header className="major">
           <h2>Skontaktuj się z nami</h2>
