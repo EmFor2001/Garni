@@ -11,10 +11,10 @@ import overLayPic from '../assets/images/overlay.png';
 // import { Link } from 'gatsby';
 
 const sections = [
-  { id: 'one', bg: require("static/1.jpg") },
-  { id: 'two', bg: require("/static/2.jpg") },
-  { id: 'three', bg: require("/static/3.jpg") },
-  { id: 'four', bg: require("/static/4.jpg") },
+  { id: 'one', bg: require("../../static/1.jpg") },
+  { id: 'two', bg: require("../../static/2.jpg") },
+  { id: 'three', bg: require("../../static/3.jpg") },
+  { id: 'four', bg: require("../../static/4.jpg") },
 ];
 const IndexPage = () => (
   <Layout>
