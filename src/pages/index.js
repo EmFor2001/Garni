@@ -22,7 +22,7 @@ const IndexPage = () => (
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src="/1.jpg" alt="" />
+          <img src="../../1.jpg" alt="" />
         </span>
         <div className="content">
           <header className="major">
@@ -62,7 +62,7 @@ const IndexPage = () => (
     <section id="two" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src="/2.jpg" alt="" />
+          <img src="../../2.jpg" alt="" />
         </span>
         <div className="content">
           <header className="major">
@@ -84,7 +84,7 @@ const IndexPage = () => (
     <section id="three" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src="/3.jpg" alt="" />
+          <img src="../../3.jpg" alt="" />
         </span>
         <div className="content">
           <header className="major">
@@ -109,7 +109,7 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
       <span className="image fit primary">
-          <img src="/4.jpg" alt="" />
+          <img src="../../4.jpg" alt="" />
         </span>
         <header className="major">
           <h2>Skontaktuj się z nami</h2>
@@ -163,7 +163,7 @@ const IndexPage = () => (
             key={s.id}
             className="main-bg"
             id={`${s.id}-bg`}
-            style={{ backgroundImage: `url("/5.jpg"), url(${s.bg})` }}
+            style={{ backgroundImage: `url("../../5.jpg"), url(${s.bg})` }}
           />
         );
       })}
