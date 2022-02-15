@@ -42,7 +42,7 @@ class Layout extends Component {
         render={data => (
           <>
             <Helmet
-              title={data.site.siteMetadata.title}
+              title="Garni"
               meta={[
                 { name: 'description', content: 'Highlights' },
                 { name: 'keywords', content: 'site, web' },

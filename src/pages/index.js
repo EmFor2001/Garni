@@ -6,12 +6,14 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 const sections = [
-  { id: 'one', bg: require('../assets/images/pic01.jpg') },
-  { id: 'two', bg: require('../assets/images/pic02.jpg') },
-  { id: 'three', bg: require('../assets/images/pic03.jpg') },
+  { id: 'one', bg: require('../assets/images/1.jpg') },
+  { id: 'two', bg: require('../assets/images/2.jpg') },
+  { id: 'three', bg: require('../assets/images/3.jpg') },
+  { id: 'four', bg: require('../assets/images/4.jpg') },
+  { id: 'five', bg: require('../assets/images/5.jpg') },
 ];
 const IndexPage = () => (
   <Layout>
@@ -20,19 +22,34 @@ const IndexPage = () => (
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[0].bg} alt="" />
+          <img src='../assets/images/1.jpg' alt="" />
         </span>
         <div className="content">
           <header className="major">
-            <h2>Who I am</h2>
+            <h2>Partnerzy</h2>
           </header>
           <p>
             Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            pellentesque arcu feugiat. 
           </p>
+          <ul className="icons-grid">
+            <li>
+              <span className="icon major fa-camera-retro" />
+              <h3>LPP</h3>
+            </li>
+            <li>
+              <span className="icon major fa-pencil" />
+              <h3>Reserved</h3>
+            </li>
+            <li>
+              <span className="icon major fa-code" />
+              <h3>Emanuel Berg</h3>
+            </li>
+            <li>
+              <span className="icon major fa-coffee" />
+              <h3>Solar</h3>
+            </li>
+          </ul>
         </div>
         <Scroll type="id" element="two">
           <a href="#two" className="goto-next ">
@@ -49,30 +66,12 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Stuff I do</h2>
+            <h2>Czym się zajmujemy</h2>
           </header>
           <p>
-            Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum
-            lorem blandit vis ac commodo aliquet vulputate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus officiis perferendis cupiditate inventore explicabo fugiat, cum, corporis quisquam praesentium ducimus magnam recusandae odit culpa mollitia eveniet labore quaerat quis.
           </p>
-          <ul className="icons-grid">
-            <li>
-              <span className="icon major fa-camera-retro" />
-              <h3>Photography</h3>
-            </li>
-            <li>
-              <span className="icon major fa-pencil" />
-              <h3>Blogging</h3>
-            </li>
-            <li>
-              <span className="icon major fa-code" />
-              <h3>Web Development</h3>
-            </li>
-            <li>
-              <span className="icon major fa-coffee" />
-              <h3>Sipping Coffee</h3>
-            </li>
-          </ul>
+          
         </div>
         <Scroll type="id" element="three">
           <a href="#three" className="goto-next ">
@@ -89,7 +88,7 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>One more thing</h2>
+            <h2>Zalety i możliwości</h2>
           </header>
           <p>
             Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
@@ -109,10 +108,15 @@ const IndexPage = () => (
 
     <section id="footer">
       <div className="container">
+      <span className="image fit primary">
+          <img src={sections[3].bg} alt="" />
+        </span>
         <header className="major">
-          <h2>Get in touch</h2>
+          <h2>Skontaktuj się z nami</h2>
         </header>
-        <form method="post" action="#">
+        {/* Zmienić maila  */}
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          
           <div className="row gtr-uniform">
             <div className="col-6 col-12-xsmall">
               <input type="text" name="name" id="name" placeholder="Name" />
@@ -140,8 +144,9 @@ const IndexPage = () => (
               </ul>
             </div>
           </div>
+          {/* url do zmiany */}
+          <input type="hidden" name="_next" value="https://garni.netlify.app"></input>
         </form>
-        <Link to="/Elements"> Check out Elements page</Link>
       </div>
       <Footer />
     </section>
