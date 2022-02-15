@@ -22,7 +22,7 @@ const IndexPage = () => (
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src='../assets/images/1.jpg' alt="" />
+          <img src='/1.jpg' alt="" />
         </span>
         <div className="content">
           <header className="major">
