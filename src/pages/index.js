@@ -9,11 +9,11 @@ import overLayPic from '../assets/images/overlay.png';
 // import { Link } from 'gatsby';
 
 const sections = [
-  { id: 'one', bg: require('../assets/images/1.jpg') },
-  { id: 'two', bg: require('../assets/images/2.jpg') },
-  { id: 'three', bg: require('../assets/images/3.jpg') },
-  { id: 'four', bg: require('../assets/images/4.jpg') },
-  { id: 'five', bg: require('../assets/images/5.jpg') },
+  { id: 'one', bg: require('/1.jpg') },
+  { id: 'two', bg: require('/2.jpg') },
+  { id: 'three', bg: require('/3.jpg') },
+  { id: 'four', bg: require('/4.jpg') },
+  { id: 'five', bg: require('/5.jpg') },
 ];
 const IndexPage = () => (
   <Layout>
