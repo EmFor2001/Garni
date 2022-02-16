@@ -148,7 +148,7 @@ const IndexPage = () => (
           <input type="hidden" name="_next" value="https://garni.netlify.app"></input>
         </form>
         <div className="contact-data">
-          <h3>Garni sp. </h3>
+          <h3>Garni</h3>
           <p>
           Marcin Gańczarczyk <br />
           tel.:+48 501 517 317 <br />
