@@ -1,20 +1,23 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
 
-// import img1 from '../assets/images/pic01'
+import img1 from '../../static/1.jpg'
+import img2 from '../../static/5.jpg'
+import img3 from '../../static/3.jpg'
+import img4 from '../../static/4.jpg'
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
-// import { Link } from 'gatsby';
+import { Link } from 'gatsby';
 
 const sections = [
-  { id: 'one', bg: require("/Garni/static/1.jpg") },
-  { id: 'two', bg: require("../../static/2.jpg") },
-  { id: 'three', bg: require("../../static/3.jpg") },
-  { id: 'four', bg: require("../../static/4.jpg") },
+  { id: 'one', bg: (img1) },
+  { id: 'two', bg: (img2) },
+  { id: 'three', bg: (img3) },
+  { id: 'four', bg: (img4) },
 ];
 const IndexPage = () => (
   <Layout>
@@ -23,7 +26,7 @@ const IndexPage = () => (
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[0].bg} alt="img" />
+          <img src={'/1.jpg'} alt="img" />
         </span>
         <div className="content">
           <header className="major">
@@ -63,7 +66,7 @@ const IndexPage = () => (
     <section id="two" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[1].bg} alt="img" />
+          <img src={'/2.jpg'} alt="img" />
         </span>
         <div className="content">
           <header className="major">
@@ -85,7 +88,7 @@ const IndexPage = () => (
     <section id="three" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[2].bg} alt="img" />
+          <img src={'/3.jpg'} alt="img" />
         </span>
         <div className="content">
           <header className="major">
@@ -110,7 +113,6 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
       <span className="image fit primary">
-          <img src={sections[3].bg} alt="img" />
         </span>
         <header className="major">
           <h2>Skontaktuj się z nami</h2>
