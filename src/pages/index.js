@@ -11,7 +11,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 const sections = [
   { id: 'one', bg: (img1) },
@@ -112,8 +112,6 @@ const IndexPage = () => (
 
     <section id="footer">
       <div className="container">
-      <span className="image fit primary">
-        </span>
         <header className="major">
           <h2>Skontaktuj się z nami</h2>
         </header>
@@ -122,7 +120,7 @@ const IndexPage = () => (
           
           <div className="row gtr-uniform">
             <div className="col-6 col-12-xsmall">
-              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="text" name="name" id="name" placeholder="Nazwisko/nazwa firmy" />
             </div>
             <div className="col-6 col-12-xsmall">
               <input type="email" name="email" id="email" placeholder="Email" />
@@ -131,7 +129,7 @@ const IndexPage = () => (
               <textarea
                 name="message"
                 id="message"
-                placeholder="Message"
+                placeholder="Wiadomość"
                 rows="4"
               />
             </div>
@@ -140,16 +138,24 @@ const IndexPage = () => (
                 <li>
                   <input
                     type="submit"
-                    value="Send Message"
+                    value="Wyślij wiadomość"
                     className="primary"
                   />
                 </li>
               </ul>
             </div>
           </div>
-          {/* url do zmiany */}
           <input type="hidden" name="_next" value="https://garni.netlify.app"></input>
         </form>
+        <div className="contact-data">
+          <h3>Garni sp. </h3>
+          <p>
+          Marcin Gańczarczyk <br />
+          tel.:+48 501 517 317 <br />
+          garni1@wp.pl
+          </p>
+        </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.2631003711326!2d18.46471988366539!3d54.5418489653619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda42041b4a32f%3A0x6db4fc359ef51e12!2sGniewska%2024A%2C%2081-047%20Gdynia!5e0!3m2!1spl!2spl!4v1645016724618!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <Footer />
     </section>
