@@ -2,7 +2,7 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 
 import img1 from '../../static/1.jpg'
-import img2 from '../../static/5.jpg'
+import img5 from '../../static/5.jpg'
 import img3 from '../../static/3.jpg'
 import img4 from '../../static/4.jpg'
 
@@ -15,7 +15,7 @@ import overLayPic from '../assets/images/overlay.png';
 
 const sections = [
   { id: 'one', bg: (img1) },
-  { id: 'two', bg: (img2) },
+  { id: 'two', bg: (img5) },
   { id: 'three', bg: (img3) },
   { id: 'four', bg: (img4) },
 ];
@@ -23,37 +23,22 @@ const IndexPage = () => (
   <Layout>
     <Header />
 
+
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={'/1.jpg'} alt="img" />
+          <img src={'/5.jpg'} alt="img" />
         </span>
         <div className="content">
           <header className="major">
-            <h2>Partnerzy</h2>
+            <h2>Czym się zajmujemy</h2>
           </header>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. 
+            Firma Garni od 20 lat świadczy usługi szwalnicze. Dysponujemy zespołem wykwalifikowanych specjalistów oraz parkiem maszynowym przeznaczonym do produkcji
+            sukienek, bluzek, koszul,
+            śpiworów, piżam i innych wyrobów.
           </p>
-          <ul className="icons-grid">
-            <li>
-              <span className="icon major fa-camera-retro" />
-              <h3>LPP</h3>
-            </li>
-            <li>
-              <span className="icon major fa-pencil" />
-              <h3>Reserved</h3>
-            </li>
-            <li>
-              <span className="icon major fa-code" />
-              <h3>Emanuel Berg</h3>
-            </li>
-            <li>
-              <span className="icon major fa-coffee" />
-              <h3>Solar</h3>
-            </li>
-          </ul>
+          
         </div>
         <Scroll type="id" element="two">
           <a href="#two" className="goto-next ">
@@ -66,16 +51,33 @@ const IndexPage = () => (
     <section id="two" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={'/2.jpg'} alt="img" />
+          <img src={'/1.jpg'} alt="img" />
         </span>
         <div className="content">
           <header className="major">
-            <h2>Czym się zajmujemy</h2>
+            <h2>Partnerzy</h2>
           </header>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus officiis perferendis cupiditate inventore explicabo fugiat, cum, corporis quisquam praesentium ducimus magnam recusandae odit culpa mollitia eveniet labore quaerat quis.
+            Współpracujemy między innymi z:
           </p>
-          
+          <ul className="icons-grid">
+            <li>
+              <img className="logo" src={'/mohito.jpg'} alt="mohito" />
+              {/* <h3>MOHITO</h3> */}
+            </li>
+            <li>
+              <img className="logo" src={'/reserved.jpg'} alt="reserved" />
+              {/* <h3>Reserved</h3> */}
+            </li>
+            <li>
+              <img className="logo" src={'/emanuelberg.png'} alt="emanuel berg" />
+              {/* <h3>Emanuel Berg</h3> */}
+            </li>
+            <li>
+              <img className="logo" src={'/solar.jpg'} alt="solar" />
+              {/* <h3>Solar</h3> */}
+            </li>
+          </ul>
         </div>
         <Scroll type="id" element="three">
           <a href="#three" className="goto-next ">
@@ -95,11 +97,11 @@ const IndexPage = () => (
             <h2>Zalety i możliwości</h2>
           </header>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            Chcąc uatrakcyjnić ofertę naszej firmy w 2018 roku
+            otworzyliśmy drugą szwalnię na Ukrainie.
+            Obecnie zatrudniamy łącznie 100 osób w obu krajach,
+            co daje nam możliwość realizowania
+            małych jak i dużych zleceń.
           </p>
         </div>
         <Scroll type="id" element="footer">
@@ -115,8 +117,9 @@ const IndexPage = () => (
         <header className="major">
           <h2>Skontaktuj się z nami</h2>
         </header>
+        <p>zapraszamy do kontaktu i współpracy</p>
         {/* Zmienić maila  */}
-        <form action="https://formsubmit.co/your@email.com" method="POST">
+        <form action="https://formsubmit.co/garni1@wp.pl" method="POST">
           
           <div className="row gtr-uniform">
             <div className="col-6 col-12-xsmall">
@@ -155,7 +158,7 @@ const IndexPage = () => (
           garni1@wp.pl
           </p>
         </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.2631003711326!2d18.46471988366539!3d54.5418489653619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda42041b4a32f%3A0x6db4fc359ef51e12!2sGniewska%2024A%2C%2081-047%20Gdynia!5e0!3m2!1spl!2spl!4v1645016724618!5m2!1spl!2spl" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+      <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.2631003711326!2d18.46471988366539!3d54.5418489653619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda42041b4a32f%3A0x6db4fc359ef51e12!2sGniewska%2024A%2C%2081-047%20Gdynia!5e0!3m2!1spl!2spl!4v1645016724618!5m2!1spl!2spl" height="450" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <Footer />
     </section>
