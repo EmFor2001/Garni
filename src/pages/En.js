@@ -21,7 +21,7 @@ const sections = [
 ];
 const IndexPage = () => (
   <Layout>
-    <Link to="/">PL</Link>
+    <Link to="/"><img src={'/pl.png'} alt="pl" className='flag'/></Link>
     <Headereng />
 
 
