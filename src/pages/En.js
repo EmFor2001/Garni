@@ -7,7 +7,7 @@ import img3 from '../../static/3.jpg'
 import img4 from '../../static/4.jpg'
 
 import Layout from '../components/Layout';
-import Header from '../components/Header';
+import Headereng from '../components/Header_eng';
 import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
@@ -21,8 +21,8 @@ const sections = [
 ];
 const IndexPage = () => (
   <Layout>
-    <Link to="/En">EN</Link>
-    <Header />
+    <Link to="/">PL</Link>
+    <Headereng />
 
 
     <section id="one" className="main special">
@@ -32,12 +32,10 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Czym się zajmujemy</h2>
+            <h2>What we do?</h2>
           </header>
           <p>
-            Firma Garni od 20 lat świadczy usługi szwalnicze. Dysponujemy zespołem wykwalifikowanych specjalistów oraz parkiem maszynowym przeznaczonym do produkcji
-            sukienek, bluzek, koszul,
-            śpiworów, piżam i innych wyrobów.
+            The Garni company has been providing sewing services for over 20 years. We have a team of qualified specialists and a machine park intended for the production of dresses, blouses, shirts, sleeping bags, pajamas and other products.
           </p>
           
         </div>
@@ -56,10 +54,10 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Partnerzy</h2>
+            <h2>Our partners</h2>
           </header>
           <p>
-            Współpracujemy między innymi z:
+            We work with:
           </p>
           <ul className="icons-grid">
             <li>
@@ -95,14 +93,10 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Zalety i możliwości</h2>
+            <h2>Advantages and capabilities</h2>
           </header>
           <p>
-            Chcąc uatrakcyjnić ofertę naszej firmy w 2018 roku
-            otworzyliśmy drugą szwalnię na Ukrainie.
-            Obecnie zatrudniamy łącznie 100 osób w obu krajach,
-            co daje nam możliwość realizowania
-            małych jak i dużych zleceń.
+            In order to make our company's offer more attractive, in 2018 we opened a second sewing room in Ukraine. We currently employ a total of 100 people in both countries, which allows us to carry out small and large orders.
           </p>
         </div>
         <Scroll type="id" element="footer">
@@ -116,15 +110,15 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
         <header className="major">
-          <h2>Skontaktuj się z nami</h2>
+          <h2>Contact</h2>
         </header>
-        <p>zapraszamy do kontaktu i współpracy</p>
+        <p>We invite you to contact us and cooperate</p>
         {/* Zmienić maila  */}
         <form action="https://formsubmit.co/garni1@wp.pl" method="POST">
           
           <div className="row gtr-uniform">
             <div className="col-6 col-12-xsmall">
-              <input type="text" name="name" id="name" placeholder="Nazwisko/nazwa firmy" />
+              <input type="text" name="name" id="name" placeholder="Name" />
             </div>
             <div className="col-6 col-12-xsmall">
               <input type="email" name="email" id="email" placeholder="Email" />
@@ -133,7 +127,7 @@ const IndexPage = () => (
               <textarea
                 name="message"
                 id="message"
-                placeholder="Wiadomość"
+                placeholder="Message"
                 rows="4"
               />
             </div>
@@ -142,14 +136,14 @@ const IndexPage = () => (
                 <li>
                   <input
                     type="submit"
-                    value="Wyślij wiadomość"
+                    value="Send"
                     className="primary"
                   />
                 </li>
               </ul>
             </div>
           </div>
-          <input type="hidden" name="_next" value="https://garni.netlify.app"></input>
+          <input type="hidden" name="_next" value="https://garni.netlify.app/En"></input>
         </form>
         <div className="contact-data">
           <h3>Garni</h3>
